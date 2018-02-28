@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>悬赏单</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta name="description"
+	content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+<link rel="stylesheet" href="../lib/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<link rel="stylesheet" href="css/demos.css">
+
+</head>
+
+<body ontouchstart>
+	<div class="page__pd">
+		<div class="weui-panel weui-panel_access">
+			<div class="weui-panel__bd">
+				<a href="javascript:void(0);"
+					class="weui-media-box weui-media-box_appmsg">
+					<div class="weui-media-box__bd">
+						<p class="weui-media-box__desc">发票抬头：方欣科技有限公司</p>
+						<p class="weui-media-box__desc">纳税人识别号：4305328989M</p>
+						<p class="weui-media-box__desc">发票类型：餐饮</p>
+						<p class="weui-media-box__desc">邮箱：969354251@qq.com</p>
+						<p class="weui-media-box__desc">发票金额：￥400.00</p>
+						<p class="weui-media-box__desc">发票张数限制：3张</p>
+						<p class="weui-media-box__desc">总赏金：￥8.00</p>
+
+						<p class="weui-media-box__desc">------------------------------------------------</p>
+						<div class="weui-media-box__bd">
+							<h4 class="weui-media-box__title">已拼</h4>
+						</div>
+						<p class="weui-media-box__desc">已拼发票金额：￥100.00</p>
+						<p class="weui-media-box__desc">第一张：￥70.00</p>
+						<p class="weui-media-box__desc">第一张：￥30.00</p>
+
+						<p class="weui-media-box__desc">------------------------------------------------</p>
+						<div class="weui-media-box__bd">
+							<h4 class="weui-media-box__title">还需要拼发票</h4>
+						</div>
+						<p class="weui-media-box__desc">发票形式：电子发票</p>
+						<p class="weui-media-box__desc">发票类型：餐饮</p>
+						<p class="weui-media-box__desc">还需要：￥200.00</p>
+						<p class="weui-media-box__desc">最少面值金额：￥30</p>
+						<p class="weui-media-box__desc">剩余赏金：￥6.00</p>
+						<!--               <p class="weui-media-box__desc">面值：￥300.00 </p> -->
+					</div>
+				</a>
+
+			</div>
+		</div>
+	</div>
+	<div class='demos-content-padded'>
+		<a href="./navbar.html" class="weui-btn weui-btn_primary">揭榜</a>
+		<a href="javascript:;" id='show-actions' class="weui-btn weui-btn_primary">揭榜说明</a>
+		<a href="javascript:;" class="weui-btn weui-btn_primary">推荐给好友</a>
+		
+	</div>
+
+	<style>
+.weui-panel {
+	margin: 0;
+}
+
+.weui-media-box {
+	padding: 8px 15px;
+}
+
+.weui-panel__bd .weui-media-box__hd {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+}
+
+.weui-media-box__desc {
+	-webkit-line-clamp: 1;
+}
+
+.weui-media-box__title {
+	text-align: center;
+	margin-top: -4px;
+}
+
+.weui-dialog__bd {
+	text-align: left;
+}
+</style>
+	<script src="../lib/jquery-2.1.4.js"></script>
+	<script src="../lib/fastclick.js"></script>
+	<script>
+		$(function() {
+			FastClick.attach(document.body);
+		});
+	</script>
+	<script src="../js/jquery-weui.js"></script>
+
+	<script>
+	   $(document).on("click", "#show-actions", function() {
+		   $.alert("第一步：揭榜<br>第二步：收到电子发票后通过邮箱转发到榜单主人<br>第三步：榜单主人确认收到电子发票<br>第四步：系统发送赏金到账户");
+	      });
+    </script>
+</body>
+</html>

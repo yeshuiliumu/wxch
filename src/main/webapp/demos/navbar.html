@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery WeUI</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta name="description"
+	content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+<link rel="stylesheet" href="../lib/weui.min.css">
+<link rel="stylesheet" href="../css/jquery-weui.css">
+<link rel="stylesheet" href="css/demos.css">
+
+</head>
+
+<body ontouchstart>
+
+	<div class="weui-tab">
+		<div class="weui-navbar">
+			<a class="weui-navbar__item weui-bar__item--on" href="#tab1"> 待处理
+				<span class="weui-badge1"
+				style="position: absolute; top: -.4em; right: -.4em;">1</span>
+			</a> <a class="weui-navbar__item" href="#tab2"> 待确认 </a> <a
+				class="weui-navbar__item" href="#tab3"> 已完成 </a>
+		</div>
+		<div class="weui-tab__bd">
+			<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+
+			</div>
+			<div id="tab2" class="weui-tab__bd-item">
+				<h1>页面二</h1>
+			</div>
+			<div id="tab3" class="weui-tab__bd-item">
+				<h1>页面三</h1>
+			</div>
+		</div>
+	</div>
+	<style>
+.weui-badge1 {
+	display: inline-block;
+    padding: .15em .4em;
+    min-width: 8px;
+    border-radius: 18px;
+    background-color: #f43530;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: middle;
+    min-width: 18px;
+	margin-right: 7px;
+	margin-top: 7px;
+}
+</style>
+
+	<script src="../lib/jquery-2.1.4.js"></script>
+	<script src="../lib/fastclick.js"></script>
+	<script>
+		$(function() {
+			FastClick.attach(document.body);
+		});
+	</script>
+	<script src="../js/jquery-weui.js"></script>
+
+	<script>
+		$("#tab1").load('./navbar1.html');
+	</script>
+</body>
+</html>

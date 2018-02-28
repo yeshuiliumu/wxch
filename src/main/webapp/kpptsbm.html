@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+	<meta charset="UTF-8">
+</header>
+<body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+
+<a  id= "test3" class = "test3" onclick="test()" href="#">test</a>
+<script>
+	function test(){
+		$.ajax({
+			type: 'POST',
+			url: "https://api.weixin.qq.com/card/invoice/platform/createcard?access_token=5_A5vvL_1l5nphZ-_n7zeQbD31fE3bvj_du9Dl3CcziD8kP9B0Gg2dmC_w9QaefbgFYB9wMaB-wAFFKqdC9-3RHFQ4EG5M6leSrDkNXj-coRHdVM7PTMiao2evTUDFKuZKCHOyOicACOWgq21IFJKfAJAJNO",
+			data: {
+			    "invoice_info": {
+			        "base_info": {
+			            "logo_url": "http://mmbiz.qpic.cn/mmbiz/iaL1LJM1mF9aRKPZJkmG8xXhiaHqkKSVMMWeN3hLut7X7hicFNjakmxibMLGWpXrEXB33367o7zHN0CwngnQY7zb7g/0", 
+			            "title": "xx公司"
+			        }, 
+			        "type": " 广东省增值税普通发票 ", 
+			        "payee": " 测试 - 收款方 ", 
+			        "detail": " 测试 -detail"
+			    }
+			},
+			dataType:"JSON",
+			success: function(data){
+				console.log("123");
+				console.log(data);
+  }
+ 
+});
+	}
+</script>
+
+</body>
+</html>

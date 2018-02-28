@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+	<meta charset="UTF-8">
+</header>
+<body>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+
+<a  id= "test3" class = "test3" onclick="test()" href="#">test</a>
+<script>
+	function test(){
+		$.ajax({
+			type: 'POST',
+			url: "../../../wxch/wx/validation",
+			contentType:"text/xml",
+			data: "<xml><ToUserName><![CDATA[gh_893432079207]]></ToUserName><FromUserName><![CDATA[o1eJBwp3dn6twL6FUdNP2Mw9DiZU]]></FromUserName><CreateTime>1513060869</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你是谁]]></Content><MsgId>6498546949628051463</MsgId></xml>",
+			dataType:"text",
+			success: function(data){
+				console.log("123");
+  }
+ 
+});
+	}
+</script>
+
+</body>
+</html>
